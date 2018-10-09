@@ -6,7 +6,7 @@ from util import *
 logger = logging.getLogger()
 
 
-def main(host='255.255.255.255', port=7000):
+def main(host='35.171.169.99', port=7000):
     sock = socket.socket(socket.AF_INET, # Internet
                          socket.SOCK_DGRAM) # UDP
     sock.sendto(b'0', (host, port))

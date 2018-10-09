@@ -7,7 +7,7 @@ logger = logging.getLogger()
 addresses = []
 
 
-def main(host='0.0.0.0', port=7000):
+def main(host="", port=7000):
     sock = socket.socket(socket.AF_INET, # Internet
                          socket.SOCK_DGRAM) # UDP
     sock.bind((host, port))
