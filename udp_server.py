@@ -9,7 +9,7 @@ def main(host="", port=7000):
     sock = socket.socket(socket.AF_INET, # Internet
                          socket.SOCK_DGRAM) # UDP
     sock.bind((host, port))
-    print("Listening on: " + port)
+    print("Listening on: " + str(port))
     while True:
         data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
         print("connection from: %s", addr)
